@@ -8,6 +8,7 @@
                 <div class="links">
                     <a href="https://twitter.com/evipepota">Twitter</a>
                     <a href="https://github.com/evipepota">github</a>
+                    <router-link to="/ctf-writeup">ctf</router-link>
                 </div>
             </div>
         </div>
