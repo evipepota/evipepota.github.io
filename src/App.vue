@@ -28,6 +28,9 @@ import Header from "./components/Header.vue"
 </template>
 
 <style>
+img {
+    max-width: 100%;
+}
 .pink {
     color: pink;
 }
