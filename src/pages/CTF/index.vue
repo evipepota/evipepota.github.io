@@ -1,9 +1,4 @@
-<script setup lang="ts">
-import { RouteRecordRaw } from 'vue-router';
-
-defineProps<{
-    routes: RouteRecordRaw[],
-}>();
+<script lang="ts">
 </script>
 
 <template>

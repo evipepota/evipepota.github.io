@@ -1,0 +1,1 @@
+import{_ as n,o as t,c,F as o,a as e}from"./app.24243a0b.js";const s={},a=e("br",null,null,-1),r=e("h2",null,"\u6E96\u5099\u4E2D",-1);function _(l,d){return t(),c(o,null,[a,r],64)}const f=n(s,[["render",_]]);export{f as default};

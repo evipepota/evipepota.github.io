@@ -1,1 +1,0 @@
-import{d as n,c as o,F as t,a as e,o as s}from"./index.00d9dc19.js";const a=e("br",null,null,-1),l=e("h2",null,"\u6E96\u5099\u4E2D",-1),p=n({__name:"index",props:{routes:null},setup(r){return(u,c)=>(s(),o(t,null,[a,l],64))}});export{p as default};
