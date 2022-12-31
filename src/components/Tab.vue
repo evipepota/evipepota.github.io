@@ -35,12 +35,48 @@ export default {
     </div>
     <div v-else-if="show == '2'" class="tabtext">
         <br>
-        <p>
-            2021年 4月 静岡大学情報学部入学 <br>
-            2022年 6月 技育博2022参加 <br>
-            2022年 8月 セキュリティキャンプ2022全国大会L2クラス <br>
-            2022年 10月 paizaアルバイト
-        </p>
+        <v-timeline side="end" align="start">
+
+            <v-timeline-item size="small" dot-color="pink">
+                <template v-slot:opposite>
+                    2021-4
+                </template>
+                <div style="text-align: left;">
+                    <div class="text-h6">静岡大学情報学部入学</div>
+                </div>
+            </v-timeline-item>
+
+            <v-timeline-item size="small" dot-color="pink">
+                <template v-slot:opposite>
+                    2022-6
+                </template>
+                <div style="text-align: left;">
+                    <div class="text-h6">技育博2022参加</div>
+                    <div>
+                        プログラミングサークルSZPPとして参加しました。
+                    </div>
+                </div>
+            </v-timeline-item>
+
+            <v-timeline-item size="small" dot-color="pink">
+                <template v-slot:opposite>
+                    2022-8
+                </template>
+                <div style="text-align: left;">
+                    <div class="text-h6">セキュリティキャンプ全国大会2022 L2クラス参加</div>
+                </div>
+            </v-timeline-item>
+
+            <v-timeline-item size="small" dot-color="pink">
+                <template v-slot:opposite>
+                    2022-8
+                </template>
+                <div style="text-align: left;">
+                    <div class="text-h6">paizaアルバイト開始</div>
+                </div>
+            </v-timeline-item>
+
+        </v-timeline>
     </div>
 </template>
 

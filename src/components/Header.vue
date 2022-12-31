@@ -1,15 +1,28 @@
+<script lang="ts">
+import { mdiAccount } from '@mdi/js'
+import { mdiGithub } from '@mdi/js';
+import { mdiTwitter } from '@mdi/js';
+export default {
+    data: () => ({
+        mdiAccount,
+        mdiGithub,
+        mdiTwitter,
+    }),
+}
+</script>
+
 <template>
     <div class="header">
         <div class="header-container">
             <div class="header-title">
                 <span class="header-title-text">evip</span>
             </div>
-            <div class="links-container">
-                <div class="links">
-                    <a href="https://twitter.com/evipepota">Twitter</a>
-                    <a href="https://github.com/evipepota">github</a>
-                    <router-link to="/ctf">ctf</router-link>
-                </div>
+            <div class="links-container" style="text-align: center;">
+                <v-btn variant="text" :icon="mdiAccount"></v-btn>
+
+                <v-btn variant="text" :icon="mdiGithub" href="https://github.com/evipepota" target="_blank"></v-btn>
+
+                <v-btn variant="text" :icon="mdiTwitter" href="https://twitter.com/evipepota" target="_blank"></v-btn>
             </div>
         </div>
     </div>
