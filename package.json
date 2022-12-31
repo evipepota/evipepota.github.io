@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "vue": "^3.2.41",
-    "vue3-tabs-component": "^1.1.1"
+    "vue3-tabs-component": "^1.1.1",
+    "vuetify": "^3.0.6"
   },
   "devDependencies": {
+    "@mdi/js": "^7.1.96",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vueuse/head": "^1.0.22",
     "gh-pages": "^4.0.0",
