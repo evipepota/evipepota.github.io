@@ -1,0 +1,23 @@
+name: Format Check
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run Prettier
+      run: yarn prettier --check ./src
+      working-directory: .
+
