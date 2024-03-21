@@ -15,7 +15,9 @@ export default {
   <div class="header">
     <div class="header-container">
       <div class="header-title">
-        <span class="header-title-text">evip</span>
+        <span class="header-title-text"
+          ><a href="/" style="color: white"> evip</a></span
+        >
       </div>
       <div class="links-container" style="text-align: center">
         <v-btn variant="text" :icon="mdiAccount"></v-btn>
