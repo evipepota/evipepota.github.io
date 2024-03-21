@@ -1,40 +1,39 @@
 <script lang="ts">
 export default {
-    data() {
-        return {
-            title: 'evipepota',
-            message: 'Welcome to Vue',
-            pink: true,
-        };
-    },
-};
+  data() {
+    return {
+      title: 'evipepota',
+      message: 'Welcome to Vue',
+      pink: true,
+    }
+  },
+}
 </script>
 
 <script setup lang="ts">
-import Tab from "@/components/Tab.vue"
+import Tab from '@/components/Tab.vue'
 </script>
 
-
 <template>
-    <div class="top-page-container">
-    <img src="@/assets/evip2.gif">
+  <div class="top-page-container">
+    <img src="@/assets/evip2.gif" />
     <h1 :title="message" :class="{ pink: pink }">{{ title }}</h1>
 
-    <br>
+    <br />
 
     <Tab />
-    </div>
+  </div>
 </template>
 
 <style>
 .top-page-container {
-    text-align: center;
+  text-align: center;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .pink {
-    color: pink;
+  color: pink;
 }
 </style>
