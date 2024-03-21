@@ -17,4 +17,7 @@ a++;
 
 ### aiueokakoejfk
 
-`a`を`hoge`して`fugafuga`
+`a`を`hoge`して`fugafuga`したら`fugaggagagagaggagafugaggagagagaggagafugaggagagagaggaga`になるらしい？
+
+`fugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggaga`
+ここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置する

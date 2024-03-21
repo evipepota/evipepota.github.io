@@ -83,4 +83,11 @@ pre {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 678px) {
+  .markdown-wrapper {
+    width: 95%;
+  }
 }
