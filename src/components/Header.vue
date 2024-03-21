@@ -24,6 +24,11 @@ export default {
 
                 <v-btn variant="text" :icon="mdiTwitter" href="https://twitter.com/evipepota" target="_blank"></v-btn>
             </div>
+            <div class="header-right">
+                <div class="links">
+                    <a href="/CTF" style="font-size: 1.2rem">Blog</a>
+                </div>
+            </div>
         </div>
     </div>
 </template>

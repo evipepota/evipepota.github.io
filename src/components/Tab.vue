@@ -30,7 +30,9 @@ export default {
         <h3>好き</h3>
         <p>
             Rust <br>
-            ヤドン
+            ヤドン <br>
+            CTF <br>
+            HTB
         </p>
     </div>
     <div v-else-if="show == '2'" class="tabtext">
@@ -73,6 +75,15 @@ export default {
                 </template>
                 <div style="text-align: left;">
                     <div class="text-h6">paizaアルバイト開始</div>
+                </div>
+            </v-timeline-item>
+
+            <v-timeline-item size="small" dot-color="pink">
+                <template v-slot:opposite>
+                    2023-8
+                </template>
+                <div style="text-align: left;">
+                    <div class="text-h6">Knightsoアルバイト開始</div>
                 </div>
             </v-timeline-item>
 

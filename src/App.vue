@@ -4,5 +4,11 @@ import Header from "@/components/Header.vue"
 
 <template>
     <Header />
-    <router-view></router-view>
+    <router-view class="router-view"></router-view>
 </template>
+
+<style>
+.router-view {
+    margin-top: 20px;
+}
+</style>
