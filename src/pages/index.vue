@@ -4,7 +4,6 @@ export default {
     return {
       title: 'evipepota',
       message: 'Welcome to Vue',
-      pink: true,
     }
   },
 }
@@ -17,7 +16,7 @@ import Tab from '@/components/Tab.vue'
 <template>
   <div class="top-page-container">
     <img src="@/assets/evip2.gif" />
-    <h1 :title="message" :class="{ pink: pink }">{{ title }}</h1>
+    <h1 :title="message" class="title">{{ title }}</h1>
 
     <br />
 
@@ -33,7 +32,9 @@ img {
   max-width: 100%;
 }
 
-.pink {
+.title {
+  font-size: 3.2em;
+  line-height: 1.1;
   color: pink;
 }
 </style>

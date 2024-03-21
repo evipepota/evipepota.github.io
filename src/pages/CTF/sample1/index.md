@@ -5,3 +5,16 @@ meta:
 </route>
 
 # sample1
+
+---
+
+## aiueo-
+
+```cpp
+int a = 10;
+a++;
+```
+
+### aiueokakoejfk
+
+`a`を`hoge`して`fugafuga`

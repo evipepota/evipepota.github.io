@@ -23,4 +23,10 @@ import { RouteRecordRaw } from 'vue-router'
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 678px) {
+  .all-content {
+    width: 80%;
+  }
+}
 </style>
