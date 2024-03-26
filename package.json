@@ -12,6 +12,7 @@
   "dependencies": {
     "@rollup/pluginutils": "^5.1.0",
     "@vueuse/head": "^2.0.0",
+    "firebase-tools": "^13.5.2",
     "markdown-it": "^14.1.0",
     "markdown-it-prism": "^2.3.0",
     "vite-ssg": "^0.23.6",
