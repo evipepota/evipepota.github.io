@@ -62,6 +62,10 @@ button:focus-visible {
   padding: 2rem;
 }
 
+hr {
+  margin: 5px 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -83,6 +87,14 @@ pre {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  line-height: 2;
+}
+
+.markdown-wrapper code {
+  color: #ffa0d4;
+}
+
+.markdown-wrapper p {
   overflow-x: scroll;
 }
 

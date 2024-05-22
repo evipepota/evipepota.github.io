@@ -1,8 +1,6 @@
 import {
   createRouter,
   createWebHistory,
-  RouteRecordRaw,
-  RouterOptions,
 } from 'vue-router'
 import routes from '~pages'
 

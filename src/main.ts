@@ -1,7 +1,6 @@
 import './style.css'
 import App from './App.vue'
 import { ViteSSG } from 'vite-ssg'
-import router from './router'
 import generatedRoutes from 'virtual:generated-pages'
 
 import 'vuetify/styles'

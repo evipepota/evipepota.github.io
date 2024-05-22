@@ -38,7 +38,7 @@ export default {
       </div>
       <div class="header-right">
         <div class="links">
-          <a href="/ctf" style="font-size: 1.2rem">Blog</a>
+          <a href="/blog" style="font-size: 1.2rem">Blog</a>
         </div>
       </div>
     </div>

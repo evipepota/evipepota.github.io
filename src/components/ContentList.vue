@@ -23,7 +23,7 @@ const sortedRoutes = computed(() => {
 export default {
   methods: {
     removePathPrefix(path: string) {
-      return path.replace(/^\/ctf\//i, '')
+      return path.replace(/^\/blog\//i, '')
     },
   },
 }

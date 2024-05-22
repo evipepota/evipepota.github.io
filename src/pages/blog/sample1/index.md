@@ -8,17 +8,19 @@ meta:
 
 ---
 
+
 ## aiueo-
 
 ```cpp
 int a = 10;
 a++;
+string hoge = "fugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagabbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccc";
 ```
 
 ### aiueokakoejfk
 
 `a`を`hoge`して`fugafuga`したら`fugaggagagagaggagafugaggagagagaggagafugaggagagagaggaga`になるらしい？
 
-`fugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggaga`
+`fugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagafugaggagagagaggagabbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccc`
 ここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置するここに長い文章を配置する
 test

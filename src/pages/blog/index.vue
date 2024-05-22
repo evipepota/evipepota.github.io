@@ -1,8 +1,8 @@
 <script lang="ts">
 import routes from '~pages'
 
-const ctfRoutes: RouteRecordRaw[] = routes.filter((route) =>
-  route.path.startsWith('/ctf/'),
+const blogRoutes: RouteRecordRaw[] = routes.filter((route) =>
+  route.path.startsWith('/blog/'),
 )
 </script>
 
@@ -13,9 +13,10 @@ import { RouteRecordRaw } from 'vue-router'
 
 <template>
   <div class="all-content">
-    <ContentList :routes="ctfRoutes" />
+    <ContentList :routes="blogRoutes" />
   </div>
 </template>
+
 <style>
 .all-content {
   text-align: center;
