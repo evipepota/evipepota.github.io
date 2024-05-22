@@ -1,7 +1,4 @@
-import {
-  createRouter,
-  createWebHistory,
-} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import routes from '~pages'
 
 const router = createRouter({

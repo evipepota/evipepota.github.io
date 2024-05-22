@@ -4,6 +4,7 @@ import * as path from 'path'
 import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages';
 import markdownItPrism from "markdown-it-prism";
+import markdownItAnchor from 'markdown-it-anchor';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,6 +35,7 @@ export default defineConfig({
             wrapperClasses: "markdown-wrapper",
             markdownItSetup(md) {
                 md.use(markdownItPrism);
+                md.use(markdownItAnchor);
             }
         }),
     ],
