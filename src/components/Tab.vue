@@ -58,7 +58,13 @@ export default {
           <div class="text-h6">
             セキュリティキャンプ全国大会2022 L2クラス参加
           </div>
-          <div>成果物は<a href="https://github.com/evipepota/rust-thfe" target="_blank">こちら</a></div>
+          <div>
+            成果物は<a
+              href="https://github.com/evipepota/rust-thfe"
+              target="_blank"
+              >こちら</a
+            >
+          </div>
         </div>
       </v-timeline-item>
 
@@ -75,7 +81,7 @@ export default {
           <div class="text-h6">Knightsoアルバイト開始</div>
         </div>
       </v-timeline-item>
-    
+
       <v-timeline-item size="small" dot-color="pink">
         <template v-slot:opposite> 2024-7 </template>
         <div style="text-align: left">
